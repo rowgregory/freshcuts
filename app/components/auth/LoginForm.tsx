@@ -26,7 +26,7 @@ const LoginForm = ({ handleSubmit, handleInput, isLoading }: any) => {
         className="input-box focus:outline-none h-10 border-[1px] border-gray-100 w-full rounded-sm px-3"
       />
       <p className="flex text-sm">
-        Don't have an account?
+        Don&apos;t have an account?
         <Link href="/auth/register" className="text-lime-600 ml-1">
           Register
         </Link>
