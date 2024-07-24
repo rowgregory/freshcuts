@@ -24,7 +24,7 @@ const About = () => {
             Welcome to FreshCut, your premier choice for exceptional landscaping services. For over 35 years, we have proudly served a diverse range of commercial and residential properties, from sprawling corporate environments and city parks to bustling shopping malls and stylish apartments.
           </p>
           <p className="text-zinc-500 text-sm leading-6 mb-3">
-            At FreshCut, we believe in setting the standard for excellence in landscape design, paving, and hardscaping. Our team of experienced landscapers is dedicated to transforming your outdoor spaces into beautifully crafted environments that reflect your unique vision. Whether you're looking to enhance a large corporate setting or give your backyard a fresh new look, we have the expertise and commitment to deliver results that exceed expectations.
+            At FreshCut, we believe in setting the standard for excellence in landscape design, paving, and hardscaping. Our team of experienced landscapers is dedicated to transforming your outdoor spaces into beautifully crafted environments that reflect your unique vision. Whether you&apos;re looking to enhance a large corporate setting or give your backyard a fresh new look, we have the expertise and commitment to deliver results that exceed expectations.
           </p>
           <p className="text-zinc-500 text-sm leading-6 mb-7">
             Fill out the form today for your free estimate!
