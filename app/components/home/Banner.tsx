@@ -67,7 +67,7 @@ const Banner = () => {
             See Our Services
           </Link>
           <Link
-            href="/contact"
+            href="/free-estimate"
             className="px-6 py-3 uppercase text-white border-2 text-sm border-gray-300 font-bold hover:bg-gray-300 duration-200"
           >
             Get In Touch
