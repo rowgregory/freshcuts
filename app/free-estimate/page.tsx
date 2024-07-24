@@ -5,7 +5,7 @@ import React from "react";
 
 const FreeEstimate = () => {
   return (
-    <div className="mb-40">
+    <div>
       <div
         className="w-full py-24 bg-zinc-100 "
         style={{ backgroundImage: `url(${BrightSquares.src})` }}
@@ -16,7 +16,7 @@ const FreeEstimate = () => {
           form
         </p>
       </div>
-      <form className="flex flex-col w-full mx-auto max-w-screen-sm gap-8 mt-20">
+      <form className="flex flex-col w-full mx-auto max-w-screen-sm gap-8 my-20 px-3">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="flex flex-col w-full">
             <label
