@@ -20,7 +20,7 @@ const Services = () => {
               We pride ourselves on our ability to whip your yard into shape in no time, bringing both functionality and beauty to your outdoor spaces. Trust FreshCut to make your landscaping dreams a reality—contact us today to see how we can bring a touch of perfection to your property.
             </p>
             <Link
-              href="/server"
+              href="/services"
               className="text-lime-500 uppercase text-sm flex font-bold items-center mt-7"
             >
               See All Services
