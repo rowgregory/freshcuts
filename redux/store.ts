@@ -7,6 +7,7 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "@/utils/createNoopStorage";
 import { authReducer } from "./features/auth/authSlice";
 import { api } from "./services/api";
+import { invoiceReducer } from "./features/invoice/invoiceSlice";
 
 const rootReducer = combineReducers({
   auth: persistReducer(
@@ -17,6 +18,7 @@ const rootReducer = combineReducers({
     },
     authReducer
   ),
+  invoice: invoiceReducer,
   [api.reducerPath]: api.reducer,
 });
 

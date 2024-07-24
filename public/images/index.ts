@@ -1,5 +1,5 @@
 import BannerLoading from "./banner-loading.png";
-import Logo from "./logo.png";
+import Logo from "./freshcut-logo.png";
 import Logo2 from "./logo-2.jpg";
 import Service1 from "./services-1.jpg";
 import Service2 from "./services-2.jpg";

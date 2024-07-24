@@ -18,18 +18,7 @@ export const authApi = api.injectEndpoints({
         body,
       }),
     }),
-    verifyRegisterCode: build.mutation({
-      query: (body: any) => ({
-        url: `${BASE_URL}?endpoint=VERIFY_REGISTER_CODE`,
-        method: "POST",
-        body,
-      }),
-    }),
   }),
 });
 
-export const {
-  useLoginMutation,
-  useRegisterMutation,
-  useVerifyRegisterCodeMutation,
-} = authApi;
+export const { useLoginMutation, useRegisterMutation } = authApi;

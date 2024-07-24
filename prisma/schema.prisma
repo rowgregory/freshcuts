@@ -16,9 +16,20 @@ datasource db {
 
 model User {
   id        Int      @id @default(autoincrement())
-  username  String   @db.VarChar(255)
+  email     String   @unique
   password  String   @db.VarChar(255)
   isAdmin   Boolean  @default(false)
+  isClient  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Invoice {
+  id        Int      @id @default(autoincrement())
+  email     String
+  orderType String
+  amount    String
+  status    String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

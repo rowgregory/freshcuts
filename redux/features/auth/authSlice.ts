@@ -9,6 +9,7 @@ export interface AuthStatePayload {
   accountWasCreated: boolean | null;
   isAuthenticated: boolean | null;
   token: string | null;
+  email: string | null;
   isAdmin: boolean | null;
 }
 
@@ -20,6 +21,7 @@ export const initialAuthState: AuthStatePayload = {
   accountWasCreated: false,
   isAuthenticated: false,
   token: "",
+  email: "",
   isAdmin: false,
 };
 
@@ -52,6 +54,7 @@ export const authSlice = createSlice({
           state.isAuthenticated = payload.isAuthenticated;
           state.token = payload.token;
           state.isAdmin = payload.isAdmin;
+          state.email = payload.email;
         }
       )
       .addMatcher(
@@ -60,12 +63,6 @@ export const authSlice = createSlice({
           state.accountWasCreated = payload.accountWasCreated;
           state.token = payload.token;
           state.isAdmin = payload.isAdmin;
-        }
-      )
-      .addMatcher(
-        authApi.endpoints.verifyRegisterCode.matchFulfilled,
-        (state: any) => {
-          state.success = true;
         }
       )
       .addMatcher(

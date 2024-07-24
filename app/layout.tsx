@@ -6,7 +6,7 @@ import PageWrapper from './page-wrapper';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "pH Lawn Care",
+  title: "Freshcut",
   description: "Lawn care and pest control services",
 };
 

@@ -5,6 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from "react";
 
 const extraNavigationData = [
@@ -13,37 +14,35 @@ const extraNavigationData = [
     textKey: 'Home'
   },
   {
-    linkKey: '/free-estimage',
+    linkKey: '/free-estimate',
     textKey: 'Free Estimate'
   },
   {
     linkKey: '/services',
     textKey: 'Services'
   },
-  {
-    linkKey: '/contact',
-    textKey: 'Contact'
-  },
 ]
 
 
 const Footer = () => {
+  const pathname = usePathname();
+  const shouldHide = ['admin', 'invoices'].some(path => pathname.includes(path));
   return (
     <div
-      className="bg-[#3c3c3c] w-full bg-center"
+      className={`${shouldHide ? 'hidden' : 'block'} bg-[#3c3c3c] w-full bg-center`}
       style={{ backgroundImage: `url(${Buried.src})` }}
     >
       <div className="w-full max-w-screen-xl px-3 py-20 mx-auto">
-        <div className="grid grid-cols-12 gap-20">
+        <div className="grid grid-cols-12 gap-y-20">
           <div className="col-span-12 sm:col-span-6 md:col-span-4">
             <h3 className="text-white text-xl font-bold mb-5">About Us</h3>
             <p className='text-sm text-zinc-500'>
-              Our team at pH Lawn Care is dedicated to finding solutions to your
+              Our team at Freshcuts is dedicated to finding solutions to your
               lawn care and pest control problems so you’ll have a beautiful
               landscape for years to come.
             </p>
           </div>
-          <div className="col-span-12 sm:col-span-6 md:col-span-4">
+          <div className="col-span-12 sm:col-span-6 md:col-span-4 mx-0 sm:mx-20">
             <h3 className="text-white text-xl font-bold mb-5">
               Extra Navigation
             </h3>
@@ -66,9 +65,9 @@ const Footer = () => {
       <div className="w-full px-3 py-6 bg-[#292929]">
         <div className='max-w-screen-xl flex items-center justify-between mx-auto'>
           <p className='text-sm text-zinc-500'>
-            © {new Date().getFullYear()} ph Lawn Care
+            © {new Date().getFullYear()} Freshcuts
           </p>
-          <a href="tel:19783568856" className='text-sm text-zinc-500'>978-356-8856 </a>
+          <a href="tel:19783568856" className='text-sm text-zinc-500'>123-456-7890</a>
         </div>
       </div>
       <div onClick={() => window.open('https://www.sqysh.io', '_blank')} className="w-full px-3 py-2 bg-[#121212]">

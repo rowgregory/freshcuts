@@ -11,18 +11,13 @@ const Services = () => {
   return (
     <div className="mt-16 mx-auto w-full px-3">
       <div className="max-w-screen-xl w-full mx-auto grid grid-cols-12 gap-8">
-        <div className="col-span-12  lg:col-span-4 px-7 py-9 border-4 border-zinc-100">
+        <div className="col-span-12 lg:col-start-2 lg:col-span-4 px-7 py-9 border-4 border-zinc-100">
           <h1 className="text-3xl">
             Exceptional <br />
             <span className="text-lime-500 font-bold">Services We Offer</span>
             <div className="w-full h-[2px] mt-5 mb-8 bg-zinc-100"></div>
             <p className="text-sm text-zinc-500">
-              We provide exceptional landscaping services to a wide range of
-              commercial and residential properties for over 35 years, including
-              large corporate environments, city parks, shopping malls and
-              appartments. Our experienced landscapers set the standard each day
-              in landscape design, paving, hardscaping. We will whip your yard
-              into shape in no time.
+              We pride ourselves on our ability to whip your yard into shape in no time, bringing both functionality and beauty to your outdoor spaces. Trust FreshCut to make your landscaping dreams a reality—contact us today to see how we can bring a touch of perfection to your property.
             </p>
             <Link
               href="/server"

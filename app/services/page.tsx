@@ -25,6 +25,7 @@ const Services = () => {
               width="0"
               height="0"
               className="w-full aspect-video mb-4"
+              priority
             />
             <h1 className="text-zinc-700 font-semibold text-lg mb-4">
               {obj.title}

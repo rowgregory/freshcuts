@@ -21,10 +21,10 @@ const About = () => {
           </h1>
           <div className="h-[1px] w-full bg-zinc-200 mt-3 mb-5"></div>
           <p className="text-zinc-500 text-sm leading-6 mb-3">
-            At pH Lawn Care we have over 80 years of combined experience in the lawn care industry working with both residential and commercial clients. We combine quality work and affordable service offerings to bring your lawn back to life. We provide customized services to ensure we meet your specific lawn care and pest control needs.
+            Welcome to FreshCut, your premier choice for exceptional landscaping services. For over 35 years, we have proudly served a diverse range of commercial and residential properties, from sprawling corporate environments and city parks to bustling shopping malls and stylish apartments.
           </p>
           <p className="text-zinc-500 text-sm leading-6 mb-3">
-            Our team at pH Lawn Care is dedicated to finding solutions to your lawn care and pest control problems so you’ll have a beautiful landscape for years to come.
+            At FreshCut, we believe in setting the standard for excellence in landscape design, paving, and hardscaping. Our team of experienced landscapers is dedicated to transforming your outdoor spaces into beautifully crafted environments that reflect your unique vision. Whether you're looking to enhance a large corporate setting or give your backyard a fresh new look, we have the expertise and commitment to deliver results that exceed expectations.
           </p>
           <p className="text-zinc-500 text-sm leading-6 mb-7">
             Fill out the form today for your free estimate!

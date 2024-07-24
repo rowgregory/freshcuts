@@ -25,12 +25,7 @@ const LoginForm = ({ handleSubmit, handleInput, isLoading }: any) => {
         placeholder="Password"
         className="input-box focus:outline-none h-10 border-[1px] border-gray-100 w-full rounded-sm px-3"
       />
-      <p className="flex text-sm">
-        Don&apos;t have an account?
-        <Link href="/auth/register" className="text-lime-600 ml-1">
-          Register
-        </Link>
-      </p>
+
       {isLoading ? (
         <Spinner fill="fill-[#41a9b2]" />
       ) : (
